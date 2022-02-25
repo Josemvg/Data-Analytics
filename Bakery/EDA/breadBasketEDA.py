@@ -54,15 +54,3 @@ countbyHour["Session"] = pd.cut(countbyHour["Time"], bins=hours, labels=sessions
 countbyHour = countbyHour.groupby(countbyHour.Session)["Count"].sum().reset_index()
 fig = px.pie(countbyHour, names = "Session", values = "Count", title = "Peak Selling Hours")
 fig.show()
-
-#Association Rules
-#Transaction List
-transactions=[]
-for item in df['Transaction'].unique():
-    itemList = list(set(df[df['Transaction']==item]['Item']))
-    transactions.append(itemList)
-#Use Transaction Encoder to go from Transaction List to boolean array
-te = TransactionEncoder()
-encodedData = te.fit(transactions).transform(transactions)
-basketData = pd.DataFrame(encodedData, columns=te.columns_)
-basketData
