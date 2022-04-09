@@ -1,0 +1,86 @@
+runfile(D:\Grado\Data Analytics\EDA\Ejercicio-Pandas\ejercicioClase.py>  d:; wdir='d:\Grado\Data Analytics\EDA\Ejercicio-Pandas\')
+5 primeras filas
+  ccaa_iso       fecha  num_casos  num_casos_prueba_pcr  num_casos_prueba_test_ac  num_casos_prueba_ag  num_casos_prueba_elisa  num_casos_prueba_desconocida
+0       AN  2020-01-01          0                     0                         0                    0                       0                             0
+1       AR  2020-01-01          0                     0                         0                    0                       0                             0
+2       AS  2020-01-01          0                     0                         0                    0                       0                             0
+3       CB  2020-01-01          0                     0                         0                    0                       0                             0
+4       CE  2020-01-01          1                     0                         0                    1                       0                             0
+
+5 primeras columnas
+     ccaa_iso       fecha  num_casos  num_casos_prueba_pcr  num_casos_prueba_test_ac
+0          AN  2020-01-01          0                     0                         0
+1          AR  2020-01-01          0                     0                         0
+2          AS  2020-01-01          0                     0                         0
+3          CB  2020-01-01          0                     0                         0
+4          CE  2020-01-01          1                     0                         0
+...       ...         ...        ...                   ...                       ...
+7424       ML  2021-01-25          0                     0                         0
+7425       NC  2021-01-25          0                     0                         0
+7426       PV  2021-01-25          0                     0                         0
+7427       RI  2021-01-25          0                     0                         0
+7428       VC  2021-01-25        108                    84                         0
+
+[7429 rows x 5 columns]
+
+Dataframe como lista de tuplas
+[('AN', '2020-01-01',   0,  0, 0,  0, 0, 0)
+ ('AR', '2020-01-01',   0,  0, 0,  0, 0, 0)
+ ('AS', '2020-01-01',   0,  0, 0,  0, 0, 0) ...
+ ('PV', '2021-01-25',   0,  0, 0,  0, 0, 0)
+ ('RI', '2021-01-25',   0,  0, 0,  0, 0, 0)
+ ('VC', '2021-01-25', 108, 84, 0, 24, 0, 0)]
+
+Tablas con fecha 2021-01-25
+     ccaa_iso       fecha  num_casos  num_casos_prueba_pcr  num_casos_prueba_test_ac  num_casos_prueba_ag  num_casos_prueba_elisa  num_casos_prueba_desconocida
+7410       AN  2021-01-25          0                     0                         0                    0                       0                             0
+7411       AR  2021-01-25          0                     0                         0                    0                       0                             0
+7412       AS  2021-01-25          0                     0                         0                    0                       0                             0
+7413       CB  2021-01-25          0                     0                         0                    0                       0                             0
+7414       CE  2021-01-25          4                     1                         0                    2                       1                             0
+7415       CL  2021-01-25          0                     0                         0                    0                       0                             0
+7416       CM  2021-01-25          0                     0                         0                    0                       0                             0
+7417       CN  2021-01-25          1                     1                         0                    0                       0                             0
+7418       CT  2021-01-25          0                     0                         0                    0                       0                             0
+7419       EX  2021-01-25          0                     0                         0                    0                       0                             0
+7420       GA  2021-01-25          0                     0                         0                    0                       0                             0
+7421       IB  2021-01-25          0                     0                         0                    0                       0                             0
+7422       MC  2021-01-25          0                     0                         0                    0                       0                             0
+7423       MD  2021-01-25          0                     0                         0                    0                       0                             0
+7424       ML  2021-01-25          0                     0                         0                    0                       0                             0
+7425       NC  2021-01-25          0                     0                         0                    0                       0                             0
+7426       PV  2021-01-25          0                     0                         0                    0                       0                             0
+7427       RI  2021-01-25          0                     0                         0                    0                       0                             0
+7428       VC  2021-01-25        108                    84                         0                   24                       0                             0
+
+Numero de casos con fecha 2021-01-25
+113
+
+Numero de casos por CCAA
+ccaa_iso
+AN    368252
+AR     93985
+AS     33781
+CB     21694
+CE      3758
+CL    174047
+CM    139568
+CN     33713
+CT    473298
+EX     61175
+GA     86809
+IB     49611
+MC     90861
+MD    493480
+ML      5673
+NC     47106
+PV    128175
+RI     23899
+VC    271473
+Name: num_casos, dtype: int64
+
+Comunidad con mayor numero de casos
+MD
+
+Comunidad con menor numero de casos
+CE
