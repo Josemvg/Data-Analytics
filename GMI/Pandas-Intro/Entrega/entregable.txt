@@ -1,0 +1,102 @@
+runfile(D:\Grado\Data Analytics\EDA\Ejercicio-Pandas\entregable.py>  d:; wdir='d:\Grado\Data Analytics\EDA\Ejercicio-Pandas\')
+
+Imprimimos head del dataframe
+   Rank                    Title                       Genre                                        Description  ... Rating   Votes  Revenue (Millions)  Metascore
+0     1  Guardians of the Galaxy     Action,Adventure,Sci-Fi  A group of intergalactic criminals are forced ...  ...    8.1  757074              333.13       76.0
+1     2               Prometheus    Adventure,Mystery,Sci-Fi  Following clues to the origin of mankind, a te...  ...    7.0  485820              126.46       65.0
+2     3                    Split             Horror,Thriller  Three girls are kidnapped by a man with a diag...  ...    7.3  157606              138.12       62.0
+3     4                     Sing     Animation,Comedy,Family  In a city of humanoid animals, a hustling thea...  ...    7.2   60545              270.32       59.0
+4     5            Suicide Squad    Action,Adventure,Fantasy  A secret government agency recruits some of th...  ...    6.2  393727              325.02       40.0
+5     6           The Great Wall    Action,Adventure,Fantasy  European mercenaries searching for black powde...  ...    6.1   56036               45.13       42.0
+6     7               La La Land          Comedy,Drama,Music  A jazz pianist falls for an aspiring actress i...  ...    8.3  258682              151.06       93.0
+7     8                 Mindhorn                      Comedy  A has-been actor best known for playing the ti...  ...    6.4    2490                 NaN       71.0
+8     9       The Lost City of Z  Action,Adventure,Biography  A true-life drama, centering on British explor...  ...    7.1    7188                8.01       78.0
+9    10               Passengers     Adventure,Drama,Romance  A spacecraft traveling to a distant colony pla...  ...    7.0  192177              100.01       41.0
+
+[10 rows x 12 columns]
+
+
+Ingresos por genero
+Genre
+Action,Adventure,Sci-Fi       10461.51
+Animation,Adventure,Comedy     5754.75
+Action,Adventure,Fantasy       5248.29
+Adventure,Family,Fantasy       2201.47
+Comedy                         1941.81
+                                ...
+Animation,Drama,Romance           0.00
+Mystery,Thriller,Western          0.00
+Romance,Sci-Fi                    0.00
+Action,Horror                     0.00
+Thriller,War                      0.00
+Name: Revenue (Millions), Length: 207, dtype: float64
+
+
+Genero con mayores ingresos
+Action,Adventure,Sci-Fi
+
+Ingresos
+10461.510000000002
+
+i:0
+Porcentaje actual: 14.461992016363196
+i:1
+Porcentaje actual: 22.417358742215015
+i:2
+Porcentaje actual: 29.6725951353895
+i:3
+Porcentaje actual: 32.71590738804357
+i:4
+Porcentaje actual: 35.400265641994885
+i:5
+Porcentaje actual: 37.83226676560965
+i:6
+Porcentaje actual: 40.23675812809761
+i:7
+Porcentaje actual: 42.16076870290509
+i:8
+Porcentaje actual: 44.06853607704724
+i:9
+Porcentaje actual: 45.9293847932676
+i:10
+Porcentaje actual: 47.78217411715785
+i:11
+Porcentaje actual: 49.621623280501694
+i:12
+Porcentaje actual: 51.306921013531486
+i:13
+Porcentaje actual: 52.96689317752394
+i:14
+Porcentaje actual: 54.499878072315006
+i:15
+Porcentaje actual: 56.01649535043565
+i:16
+Porcentaje actual: 57.3603955654818
+i:17
+Porcentaje actual: 58.643055458019546
+i:18
+Porcentaje actual: 59.915568534141684
+i:19
+Porcentaje actual: 61.09605523849443
+Numero de tuplas: 19
+
+60% mas significativo
+Genre
+Action,Adventure,Sci-Fi       10461.51
+Animation,Adventure,Comedy     5754.75
+Action,Adventure,Fantasy       5248.29
+Adventure,Family,Fantasy       2201.47
+Action,Adventure,Thriller      1739.36
+Action,Adventure,Drama         1391.79
+Adventure,Drama,Fantasy        1380.04
+Action,Crime,Drama             1346.10
+Action,Adventure,Comedy        1340.27
+Comedy,Drama,Romance           1330.62
+Comedy,Romance                 1219.11
+Action,Crime,Thriller          1200.79
+Action,Comedy,Crime            1108.93
+Action,Thriller                1097.09
+Animation,Comedy,Family         972.15
+Biography,Drama,History         927.85
+Drama,Romance                   920.51
+Name: Revenue (Millions), dtype: float64

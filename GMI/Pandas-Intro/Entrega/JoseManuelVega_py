@@ -1,0 +1,49 @@
+import pandas as pd
+import matplotlib
+
+def tuplas_porcentaje(serie, porcentaje):
+    i=0
+    suma=0
+    porcen_actual=0
+    while (porcen_actual < porcentaje):
+       print ("i:", end="")
+       print(i)
+       suma= suma +serie[i]
+       porcen_actual=(suma*100)/(serie.sum())
+       print("Porcentaje actual: ", end="")
+       print(porcen_actual)
+       i=i+1
+
+    aux=i-1
+    return aux
+
+
+df = pd.read_csv("Movies2.csv")
+
+print("Imprimimos head del dataframe")
+print(df.head(10))
+
+# Ingresos por genero
+print("Ingresos por genero")
+groupedByGenre = df.groupby("Genre")["Revenue (Millions)"].sum().sort_values(ascending=False)
+print(groupedByGenre)
+
+# Genero con mayores ingresos
+print("Genero con mayores ingresos")
+print(df.groupby("Genre")["Revenue (Millions)"].sum().idxmax())
+
+print("Ingresos")
+print(df.groupby("Genre")["Revenue (Millions)"].sum().max())
+
+# Porcentaje mas significativo (60%)
+numtuplas = tuplas_porcentaje(groupedByGenre, 60)
+print("Numero de tuplas: ", end="")
+print(numtuplas)
+
+print("60% mas significativo")
+mostSignificant = groupedByGenre.iloc[0:numtuplas]
+print(mostSignificant)
+
+mostSignificant.plot(kind="barh")
+
+plt = mostSignificant.plot(kind="pie")

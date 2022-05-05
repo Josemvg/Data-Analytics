@@ -1,0 +1,3 @@
+Nombre y apellidos: Jose Manuel Vega Gradit
+Matricula: a18m014
+Porcentaje: 60%
